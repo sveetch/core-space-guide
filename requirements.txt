@@ -1,0 +1,8 @@
+# Documentation
+sphinx>=8.0.2
+furo>=2024.8.6
+sphinx-design>=0.6.1
+sphinx-copybutton>=0.5.2
+livereload>=2.7.0
+# PDF builder
+rinohtype
