@@ -1,0 +1,13 @@
+/*
+ * This stylesheet is dedicated to adjust or append styles related to sphinx-design
+ */
+
+/* Sigle card */
+.sd-card.sc-sigle {
+    flex-direction: row;
+}
+
+.sd-card.sc-sigle .sd-card-img-top {
+    width: 72px;
+    height: 72px;
+}

@@ -4,9 +4,9 @@
 # pyenv
 .python-version
 
-# Packaging
+# Packaging and useless builds
 build
-dist
+dist/doctrees/
 *.egg-info
 
 # Byte-compiled / optimized / DLL files

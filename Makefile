@@ -44,7 +44,7 @@ clean-build:
 	@echo ""
 	@printf "$(FORMATBLUE)$(FORMATBOLD)---> Cleaning builds <---$(FORMATRESET)\n"
 	@echo ""
-	rm -Rf $(DOCS_PATH)/_build
+	rm -Rf dist
 .PHONY: clean-build
 
 clean-install:

@@ -30,4 +30,4 @@ server.watch(str(DOC_PATH / "*.rst"), shell("make html", cwd=str(DOC_PATH)))
 server.watch(str(DOC_PATH / "*/**.rst"), shell("make html", cwd=str(DOC_PATH)))
 
 # Serve built documentation
-server.serve(root=str(DOC_PATH / "_build/html"), port=8002, host="0.0.0.0", debug=True)
+server.serve(root=str(PROJECT_PATH / "dist/html"), port=8002, host="0.0.0.0", debug=True)
