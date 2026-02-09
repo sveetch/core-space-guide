@@ -3,9 +3,9 @@
 Aptitudes d'équipement
 ======================
 
-Certains équipements possèdent un ou plusieurs sigles en plus de leur valeur de dés.
+Certains équipements possèdent un ou plusieurs symboles en plus de leur valeur de dés.
 
-Chaque sigle donne une aptitude spéciale à l'arme.
+Chaque symbole donne une aptitude spéciale à l'arme.
 
 
 .. grid:: 1 1 2 2

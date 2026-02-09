@@ -22,14 +22,36 @@ Cette documentation essaye de fournir et rassembler les informations essentielle
 apprendre à jouer.
 
 
-Contenus
-********
+
+Introduction
+************
+
+    Tout s’effondre. L’accord galactique millénaire s’effondre, la superstition et la peur remplacent la science et la raison et les gouvernements deviennent de plus en plus draconiens alors qu’ils tentent de maintenir l’ordre.
+
+    Au bord des Désolations, une mystérieuse espèce extraterrestre appelée la Purge kidnappe des êtres vivants pour leur biomasse et réduit des mondes entiers en décombres. La peur se répercute sur toutes les espèces et des empires millénaires ont commencé à s’effondrer et à s’isoler. Au plus profond du cœur galactique, le trou noir montre des signes de détresse.
+
+    Au milieu de ce chaos, les Marchands, ceux qui travaillent aux frontières de l’espace de la Purge, bravent les dangers pour maintenir en vie les voies de navigation et essaient de survivre avec rien d’autre que leur intelligence et leur unique credo à suivre :
+
+    PILLER • COMMERCER • S’ADAPTER • SURVIVRE
 
 .. toctree::
     :maxdepth: 2
 
     overview.rst
-    attack.rst
+    links.rst
+
+
+Point par point
+***************
+
+.. toctree::
+    :maxdepth: 2
+
+    attacks/shot.rst
+    attacks/combat.rst
+    attacks/throw.rst
+    attacks/explosive.rst
+    attacks/failure.rst
     dices/attack.rst
     dices/purge.rst
     dices/luck.rst

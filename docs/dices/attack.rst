@@ -20,13 +20,13 @@ Les dés d'attaque
         Il y a deux icônes différentes sur les dés :
 
         * Chaque icône d'**explosion** est une **touche**;
-        * Chaque icône d'**alerte** est **échec** qui se traduit généralement par une
-          défaillance de l'arme;
+        * Chaque icône d'**alerte** est **échec** qui se traduit par une
+          :ref:`attacks_failure_intro`;
 
         Une **face vierge** est un résultat nul et **sans effet**.
 
-        Le **dé bleu** seulement comporte une **face avec deux icônes de touche** et
-        inflige donc **deux points de dégâts**.
+        Le **dé bleu** seulement comporte une **face avec deux icônes de touche** qui
+        inflige **deux points de dégâts**.
 
         Lors d'une attaque on **prend toujours le dé bleu** puis des rouges si
         nécessaire.

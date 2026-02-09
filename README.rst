@@ -2,9 +2,9 @@
 .. _virtualenv: https://virtualenv.pypa.io
 .. _pip: https://pip.pypa.io
 
-==========
-Core Space
-==========
+=====================
+Guide pour Core Space
+=====================
 
 
 Install

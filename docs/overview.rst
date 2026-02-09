@@ -3,17 +3,6 @@
 Vue d'ensemble
 ==============
 
-    Tout s’effondre. L’accord galactique millénaire s’effondre, la superstition et la peur remplacent la science et la raison et les gouvernements deviennent de plus en plus draconiens alors qu’ils tentent de maintenir l’ordre.
-
-    Au bord des Désolations, une mystérieuse espèce extraterrestre appelée la Purge kidnappe des êtres vivants pour leur biomasse et réduit des mondes entiers en décombres. La peur se répercute sur toutes les espèces et des empires millénaires ont commencé à s’effondrer et à s’isoler. Au plus profond du cœur galactique, le trou noir montre des signes de détresse.
-
-    Au milieu de ce chaos, les Marchands, ceux qui travaillent aux frontières de l’espace de la Purge, bravent les dangers pour maintenir en vie les voies de navigation et essaient de survivre avec rien d’autre que leur intelligence et leur unique credo à suivre :
-
-    PILLER • COMMERCER • S’ADAPTER • SURVIVRE
-
-Introduction
-************
-
 **En tant que joueur vous dirigez un équipage de marchands** constituée d'un unique capitaine et de ses subalternes.
 
 **Une mission comporte aussi des PNJ** qui sont contrôlés par une pseudo IA intégré au jeu.
