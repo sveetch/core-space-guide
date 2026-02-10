@@ -36,17 +36,22 @@ Introduction
 
 .. toctree::
     :maxdepth: 2
+    :caption: Introduction
 
     overview.rst
     links.rst
 
 
-Point par point
-***************
+Éléments clés
+*************
+
+Tout les éléments clés du jeu devraient être décrit ici un à un dans une version résumée.
 
 .. toctree::
     :maxdepth: 2
+    :caption: Éléments clés
 
+    gameplay/turn-counter.rst
     attacks/shot.rst
     attacks/combat.rst
     attacks/throw.rst
@@ -62,6 +67,8 @@ Point par point
     characters/trader_class_card.rst
     characters/npc_statistic_card.rst
     characters/aptitudes.rst
+    gameplay/start_mission.rst
+    phases/index.rst
 
 
 Crédits

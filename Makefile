@@ -32,6 +32,8 @@ help:
 	@echo
 	@echo "  livedoc                        -- to run livereload server to rebuild HTML documentation on source changes"
 	@echo
+	@echo "  release                        -- to release current build into Github pages directory"
+	@echo
 
 clean-pycache:
 	@echo ""

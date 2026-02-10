@@ -39,6 +39,13 @@ Il est nécessaire au préalable de construire la documentation HTML au moins un
 avant de lancer ce serveur. De plus le serveur surveille les sources et reconstruit la
 documentation lorsque ses sources sont modifiées.
 
+Lorsque la documentation actuellement construite en local est prête pour être publiée,
+il faut copier son "build" dans le répertoire de publication: ::
+
+    make release
+
+Ensuite vous pouvez commit et pousser sur la branche ``master`` qui publiera le tout.
+
 
 Crédits
 *******
