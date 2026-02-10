@@ -1,4 +1,6 @@
 DOCS_PATH=docs
+SPHINX_BUILDPATH=$(DOCS_PATH)/_build
+DISTRIBUTED_PATH=dist
 
 # Paths for the audit itself
 PYTHON_INTERPRETER=python3
@@ -44,7 +46,7 @@ clean-build:
 	@echo ""
 	@printf "$(FORMATBLUE)$(FORMATBOLD)---> Cleaning builds <---$(FORMATRESET)\n"
 	@echo ""
-	rm -Rf dist
+	rm -Rf $(SPHINX_BUILDPATH)
 .PHONY: clean-build
 
 clean-install:
@@ -90,4 +92,13 @@ livedoc:
 	@printf "$(FORMATBLUE)$(FORMATBOLD)---> Watching sources <---$(FORMATRESET)\n"
 	@echo ""
 	$(SPHINX_RELOAD)
+.PHONY: livedoc
+
+release:
+	@echo ""
+	@printf "$(FORMATBLUE)$(FORMATBOLD)---> Release into Github pages directory <---$(FORMATRESET)\n"
+	@echo ""
+	mkdir -p $(DISTRIBUTED_PATH)
+	rm -Rf $(DISTRIBUTED_PATH)/html
+	cp -r $(SPHINX_BUILDPATH)/html $(DISTRIBUTED_PATH)/
 .PHONY: livedoc

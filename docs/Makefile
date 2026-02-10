@@ -7,7 +7,7 @@ VENV_PATH=../.venv
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= $(VENV_PATH)/bin/sphinx-build
 SOURCEDIR     = .
-BUILDDIR      = ../dist
+BUILDDIR      = _build
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -16,7 +16,7 @@ help:
 .PHONY: help Makefile
 
 rinohpdf:
-	@$(SPHINXBUILD) -b rinoh . ../dist/pdf
+	@$(SPHINXBUILD) -b rinoh . _build/pdf
 .PHONY: rinohpdf
 
 
