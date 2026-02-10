@@ -49,3 +49,8 @@ dl:not([class]) dt {
 p.topic-title {
   margin: 0 -.8rem .8rem;
 }
+
+/* Inside home only  */
+#core-space .toctree-wrapper .caption {
+  display: none;
+}

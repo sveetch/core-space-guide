@@ -3,12 +3,12 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="Statistiques d’un marchand" href="../characters/trader_statistic_card.html"><link rel="prev" title="Les jetons d’accessoires" href="object_tiles.html">
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="prev" title="Démarrer une mission" href="../gameplay/start_mission.html">
         <link rel="prefetch" href="../_static/logo.dark.svg" as="image">
         <link rel="prefetch" href="../_static/logo.white.svg" as="image">
 
     <link rel="shortcut icon" href="../_static/favicon.ico"><!-- Generated with Sphinx 8.1.3 and Furo 2025.12.19 -->
-        <title>Aptitudes d’équipement - Core Spacev0.1.0</title>
+        <title>Ordre des phases d’un tour - Core Spacev0.1.0</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -216,15 +216,15 @@
 <li class="toctree-l1"><a class="reference internal" href="../dices/attack.html">Les dés d’attaque</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dices/purge.html">Le dé de la Purge</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dices/luck.html">Le dé de chance</a></li>
-<li class="toctree-l1"><a class="reference internal" href="weapon_tiles.html">Les jetons d’armes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="object_tiles.html">Les jetons d’accessoires</a></li>
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Aptitudes d’équipement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stuff/weapon_tiles.html">Les jetons d’armes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stuff/object_tiles.html">Les jetons d’accessoires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stuff/aptitudes.html">Aptitudes d’équipement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../characters/trader_statistic_card.html">Statistiques d’un marchand</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../characters/trader_class_card.html">Classe de compétence d’un marchand</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../characters/npc_statistic_card.html">Statistiques d’un PNJ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../characters/aptitudes.html">Aptitudes d’un personnage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../gameplay/start_mission.html">Démarrer une mission</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../phases/index.html">Ordre des phases d’un tour</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Ordre des phases d’un tour</a></li>
 </ul>
 
 </div>
@@ -245,7 +245,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../_sources/stuff/aptitudes.rst.txt" title="View this page">
+  <a class="muted-link" href="../_sources/phases/index.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -263,201 +263,18 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="aptitudes-d-equipement">
-<span id="stuff-aptitudes-intro"></span><h1>Aptitudes d’équipement<a class="headerlink" href="#aptitudes-d-equipement" title="Link to this heading">¶</a></h1>
-<p>Certains équipements possèdent un ou plusieurs symboles en plus de leur valeur de dés.</p>
-<p>Chaque symbole donne une aptitude spéciale à l’arme.</p>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/burst-1.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Rafale +1</div>
-<p class="sd-card-text">Vous pouvez <strong>ajouter 1 dé</strong> de combat à votre attaque, mais vous devez <strong>retirer 1 Fiche</strong> de munitions supplémentaire.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/burst-2.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Rafale +2</div>
-<p class="sd-card-text">Vous pouvez <strong>ajouter jusqu’à 2 dés</strong> de combat à votre attaque, mais vous devez <strong>retirer autant de fiches</strong> de munitions que de dés ajoutés.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/burst-full.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Tir à Pleine Capacité</div>
-<p class="sd-card-text">Vous pouvez <strong>vider votre arme en une seule rafale</strong> surpuissante. Cela <strong>retire toutes les fiches</strong> de munitions.</p>
-<p class="sd-card-text">Au choix :</p>
-<ul class="simple">
-<li><p class="sd-card-text">Ajoutez 2 dés de Combat à votre attaque si 4 ou 5 fiches de Munitions ont été retirées.</p></li>
-<li><p class="sd-card-text">Ajoutez 3 dés de Combat à votre attaque si 6 ou 7 fiches de Munitions ont été retirées.</p></li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/effortless.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Usage sans effort</div>
-<p class="sd-card-text">Cet objet peut être utilisé lors d’une action sans effort.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/for-next-mission.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Pour la prochaine mission</div>
-<p class="sd-card-text">Cet objet ne <strong>peut pas être utilisé durant la mission</strong> où vous le trouvez, retournez le pion pour vous en souvenir.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/freezer.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Gel</div>
-<p class="sd-card-text">Cette arme <strong>gèle la cible</strong> et lui <strong>fait perdre son prochain tour</strong>. Aucun jet n’est nécessaire. Lancez les dés comme indiqué pour les personnages respectivement à 1” et 2”. Toute touche les gèlera aussi, quelle que soit leur armure ou leur couvert.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/goto_stack.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-À la pioche</div>
-<p class="sd-card-text">Lorsque cet Objet est utilisé, défaussez-le et <strong>remettez le pion dans la pioche</strong>.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/infinite_ammo.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Munitions infinies</div>
-<p class="sd-card-text">Cette arme <strong>n’utilise pas de fiches de munitions</strong> (et peut faire feu même si vous n’avez pas de munitions), mais une fiche doit tout de même être ajoutée à la compteur d’hostilité depuis la réserve.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/jam.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Brouillage</div>
-<p class="sd-card-text">Tous les <strong>personnages à portée courte</strong> ou moins de la cible, quels que soient la ldv, l’armure ou le couvert, <strong>ne peuvent pas effectuer d’actions de combat à distance</strong> durant ce round. Aucun jet n’est nécessaire.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/no-recharge.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Recharge unique</div>
-<p class="sd-card-text">Cette arme ne <strong>peut plus être utilisée</strong> après qu’un marchand a effectué <strong>une action recharger</strong> durant la partie. Retournez le jeton quand vous rechargez pour vous en souvenir.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/prolonged-shot.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Tir Soutenu</div>
-<p class="sd-card-text">Si cette arme touche, vous <strong>pouvez immédiatement effectuer un autre combat à distance</strong> avec la même arme, comme <strong>action sans effort</strong>. Ce second combat à distance doit cibler le même ennemi, ou un ennemi se trouvant à une portée courte de celui-ci.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/rare.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Rare</div>
-<p class="sd-card-text">L’équipement est rare et ne peut être acheté dans un commerce.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/recharge-effortless.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Recharge sans effort</div>
-<p class="sd-card-text">Cette arme <strong>peut être rechargée</strong> avec une <strong>action sans effort</strong>.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/reliable.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Fiable</div>
-<p class="sd-card-text">Cette arme ignore les résultats ‘Danger’.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/returned.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-À retourner</div>
-<p class="sd-card-text">Lorsque cet objet est utilisé, retournez le pion. Il y aura généralement un effet alternatif au dos du pion.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/silencer.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Silencieux</div>
-<p class="sd-card-text">Cette arme n’ajoute <strong>pas de fiche de munitions au compteur</strong> d’hostilité.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/target-lock.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Cible Accrochée</div>
-<p class="sd-card-text">Cette arme <strong>ignore les couverts partiels</strong>, et peut faire feu sur des personnages engagés en contact à n’importe quelle portée sans déterminer aléatoirement la cible.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-12 sd-col-lg-12 docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sc-sigle docutils">
-<img alt="" class="sd-card-img-top" src="../_images/teleporter.png" />
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Dispersion</div>
-<p class="sd-card-text">Cet objet <strong>disperse la cible</strong> (généralement par téléportation) le nombre de fois indiqué, ou deux fois si aucun nombre n’est indiqué et sans qu’aucune attaque d’opportunité ne soit autorisée.</p>
-<p class="sd-card-text">Lancez un seul dé et si au moins une touche est obtenue vous pouvez choisir la direction, sinon elle est déterminée par le Dé de Chance.</p>
-<p class="sd-card-text">La cible peut être dispersée à travers un mur ou un élément de terrain, mais ne peut pas terminer son déplacement par-dessus. Elle ne peut pas être dispersée hors du plateau mais peut être dispersée en l’air si vous utilisez des terrains à plusieurs niveaux, auquel cas elle tombera depuis sa hauteur actuelle. Lancez les dés comme indiqué (le cas échéant) pour tout personnage se trouvant dans un rayon de 1” et 2” respectivement. Toute touche les dispersera également, dans une direction aléatoire. Notez que ceci peut être utilisé sur un personnage allié. Si l’icone se trouve sur une armure, on l’applique sur celui qui la porte.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+          <section id="ordre-des-phases-d-un-tour">
+<span id="phases-order-intro"></span><h1>Ordre des phases d’un tour<a class="headerlink" href="#ordre-des-phases-d-un-tour" title="Link to this heading">¶</a></h1>
+<p>Chaque tour est <strong>divisé en plusieurs phases</strong> :</p>
+<ol class="arabic simple">
+<li><p>Hostilité;</p></li>
+<li><p>Marchand;</p></li>
+<li><p>Purge;</p></li>
+<li><p>PNJ;</p></li>
+<li><p>Évaluation.</p></li>
+</ol>
+<p>Le <strong>joueur avec le</strong> <a class="reference internal" href="../gameplay/turn-counter.html#turn-counter-intro"><span class="std std-ref">Pion de tour</span></a> s’occupera des <strong>mécaniques du jeu</strong> de
+toute les phases <strong>sauf celle des marchands</strong>.</p>
 </section>
 
         </article>
@@ -465,23 +282,15 @@ Dispersion</div>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../characters/trader_statistic_card.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title">Statistiques d’un marchand</div>
-              </div>
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-            </a>
-          <a class="prev-page" href="object_tiles.html">
+          
+          <a class="prev-page" href="../gameplay/start_mission.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Les jetons d’accessoires</div>
+                <div class="title">Démarrer une mission</div>
                 
               </div>
             </a>
