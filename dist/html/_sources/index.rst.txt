@@ -69,6 +69,7 @@ Tout les éléments clés du jeu devraient être décrit ici un à un dans une v
     characters/aptitudes.rst
     gameplay/start_mission.rst
     phases/index.rst
+    phases/hostile.rst
 
 
 Crédits
