@@ -21,7 +21,7 @@ Pour **attaquer à distance** le personnage ne doit **pas être engagé** avec l
         Les armes avec ce symbole **répété trois fois** peuvent effectuer un tir à
         distance.
 
-        Le **premier symbole détermine le **nombre de dés** pour la **courte distance**,
+        Le **premier** symbole détermine le **nombre de dés** pour la **courte distance**,
         le **second** pour la **moyenne distance** et le **dernier** pour la **longue
         distance**.
 

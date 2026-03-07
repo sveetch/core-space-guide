@@ -39,6 +39,8 @@ Personnages Non Joueurs
 Tout PNJ, hormis ceux de La purge, sont susceptibles de rallier l'équipage d'un joueur dans certaines conditions.
 
 
+.. _purge_intro:
+
 La purge
 ********
 

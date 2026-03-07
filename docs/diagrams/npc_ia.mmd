@@ -1,0 +1,27 @@
+---
+config:
+    theme: natural
+---
+flowchart TD
+    A@{ shape: hex, label: "La cible est-elle engagée avec le PNJ ?" }
+    B@{ shape: hex, label: "La cible est-elle en ligne de vue du PNJ ?" }
+    C@{ shape: card, label: "Le PNJ effectue une action de combat rapproché contre la cible." }
+    D@{ shape: card, label: "Le PNJ se déplace vers la cible par le chemin le plus court." }
+    E@{ shape: hex, label: "Le PNJ a-t-il une statistique de Tir ?" }
+    F@{ shape: hex, label: "La statistique de combat à distance du PNJ est-elle supérieure à sa statistique de combat rapproché ?" }
+    G@{ shape: hex, label: "Le PNJ peut-il atteindre ET attaquer la cible durant ce tour ?" }
+    H@{ shape: card, label: "Le PNJ effectue un combat à distance contre la cible." }
+    I@{ shape: hex, label: "Le PNJ s’est-il déjà déplacé ce tour-ci ?" }
+
+    A-->|Non|B
+    A-->|Oui|C
+    B-->|Non|D
+    B-->|Oui|E
+    E-->|Non|D
+    E-->|Oui|F
+    F-->|Non|G
+    F-->|Oui|H
+    G-->|Non|I
+    G-->|Oui|D
+    I-->|Non|D
+    I-->|Oui|H

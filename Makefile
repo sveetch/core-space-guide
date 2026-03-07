@@ -1,6 +1,7 @@
 DOCS_PATH=docs
 SPHINX_BUILDPATH=$(DOCS_PATH)/_build
 DISTRIBUTED_PATH=dist
+FRONTEND_DIR=frontend
 
 # Paths for the audit itself
 PYTHON_INTERPRETER=python3
@@ -23,10 +24,13 @@ help:
 	@echo "  clean                          -- to clean EVERYTHING (Warning)"
 	@echo "  clean-pycache                  -- to remove all __pycache__, this is recursive from current directory"
 	@echo "  clean-install                  -- to clean Python side installation"
+	@echo "  clean-frontend-install         -- to clean frontend installation"
 	@echo "  clean-build                    -- to remove documentation builds"
 	@echo
 	@echo "  install                        -- to install this project with virtualenv and Pip"
+	@echo "  install-frontend               -- to install frontend"
 	@echo
+	@echo "  diagrams                       -- to build diagrams SVG with Mermaid (from frontend)"
 	@echo "  html                           -- to build HTML documentation"
 	@echo "  pdf                            -- to build PDF documentation"
 	@echo
@@ -58,7 +62,15 @@ clean-install:
 	rm -Rf $(VENV_PATH)
 .PHONY: clean-install
 
-clean: clean-install clean-build clean-pycache
+clean-frontend-install:
+	@echo ""
+	@printf "$(FORMATBLUE)$(FORMATBOLD)---> Cleaning frontend install <---$(FORMATRESET)\n"
+	@echo ""
+	rm -Rf $(FRONTEND_DIR)/node_modules
+	rm -Rf $(FRONTEND_DIR)/package-lock.json
+.PHONY: clean-frontend-install
+
+clean: clean-install clean-frontend-install clean-build clean-pycache
 .PHONY: clean
 
 venv:
@@ -75,6 +87,13 @@ install: venv
 	$(PIP_BIN) install -r requirements.txt
 .PHONY: install
 
+install-frontend:
+	@echo ""
+	@printf "$(FORMATBLUE)$(FORMATBOLD)---> Installing frontend requirements <---$(FORMATRESET)\n"
+	@echo ""
+	cd $(FRONTEND_DIR) && npm install
+.PHONY: install-frontend
+
 html:
 	@echo ""
 	@printf "$(FORMATBLUE)$(FORMATBOLD)---> Building HTML documentation <---$(FORMATRESET)\n"
@@ -88,6 +107,13 @@ pdf:
 	@echo ""
 	cd $(DOCS_PATH) && make rinohpdf
 .PHONY: pdf
+
+diagrams:
+	@echo ""
+	@printf "$(FORMATBLUE)$(FORMATBOLD)---> Building diagrams SVG with Mermaid <---$(FORMATRESET)\n"
+	@echo ""
+	cd $(FRONTEND_DIR) && ./node_modules/.bin/mmdc -p puppeteer-config.json -i ../$(DOCS_PATH)/diagrams/npc_ia.mmd -o ../$(DOCS_PATH)/_static/images/npc_ia.svg
+.PHONY: diagrams
 
 livedoc:
 	@echo ""

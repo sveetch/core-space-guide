@@ -45,10 +45,8 @@ Introduction
 Éléments clés
 *************
 
-Tout les éléments clés du jeu devraient être décrit ici un à un dans une version résumée.
-
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
     :caption: Éléments clés
 
     gameplay/turn-counter.rst
@@ -57,19 +55,52 @@ Tout les éléments clés du jeu devraient être décrit ici un à un dans une v
     attacks/throw.rst
     attacks/explosive.rst
     attacks/failure.rst
+    gameplay/npc_ai.rst
+
+
+Matériel de jeu
+***************
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Matériel de jeu
+
     dices/attack.rst
     dices/purge.rst
     dices/luck.rst
     stuff/weapon_tiles.rst
     stuff/object_tiles.rst
     stuff/aptitudes.rst
+
+
+Statistiques et aptitudes
+*************************
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Statistiques et aptitudes
+
     characters/trader_statistic_card.rst
+    characters/trader_career.rst
     characters/trader_class_card.rst
     characters/npc_statistic_card.rst
     characters/aptitudes.rst
+
+
+Déroulement d'une mission
+*************************
+
+.. toctree::
+    :maxdepth: 1
+    :caption: Déroulement d'une mission
+
     gameplay/start_mission.rst
     phases/index.rst
     phases/hostile.rst
+    phases/traders.rst
+    phases/purge.rst
+    phases/npc.rst
+    gameplay/end_mission.rst
 
 
 Crédits
@@ -80,3 +111,5 @@ All designs © Battle Systems ™ 2022.  https://www.BattleSystems.co.uk
 Certains textes peuvent provenir du document *Aides de jeu / Cartes / Résumés des règles pour Core Space* par la communauté de VortexZone https://vortexzone.com/
 
 Le logo SVG et certaines découpes graphiques proviennent de la formidable application de Nico Van den Winckel https://github.com/xinix/core-space
+
+Certains symboles en SVG ont été fait avec ou à partir d'éléments provenant de `SVG Repo <https://www.svgrepo.com>`_.

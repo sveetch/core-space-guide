@@ -3,19 +3,34 @@
 Défaillance d'une arme
 ======================
 
-L'icône d'**alerte** sur la face d'un dé **signifie un échec** et cause un
-disfonctionnement de l'arme **quel que soit son type**.
+.. grid:: 1 1 2 2
+    :gutter: 2
 
-Si **deux icônes** ou plus sont obtenues lors d'une attaque, l'arme **s'enraye ou se
-casse** et **aucun dégât** n'est provoqué.
+    .. grid-item::
+        :columns: 12 12 1 1
 
-Si une **arme à distance s'enraye** : pivoter son **pion de 180°**. Désenrayer une arme
-à distance coûte 1 action.
+        .. figure:: /_static/images/symbols/attack-dice-failure.png
+            :align: center
 
-Si une **arme de combat rapproché** se casse : **retournez le pion** de l'objet.
+    .. grid-item::
+        :columns: 12 12 11 11
 
-Tant qu'elle est **cassée**, une arme ne **peut plus être utilisée en mission** sauf si
-on effectue une **réparation**. L'arme sera **réparée automatiquement après une
-mission** en campagne.
+        Cet icône sur la face d'un dé **signifie un échec** et cause un
+        disfonctionnement de l'arme **quel que soit son type**.
 
-Si vous combattez avec une **aptitude d'équipement**, les échecs n'ont **pas d'effet**.
+Si un **seul icône** est obtenu dans le résultat des dés c'est une
+**défaillance mineure**, le dé est **juste ignoré**.
+
+Si **deux icônes** ou plus sont obtenues alors l'arme a eu une **défaillance critique**:
+
+* Pour une **arme à distance** : pivoter son **pion de 180°**. On peut la désenrayer, ce
+  qui coûte 1 action;
+* Pour une **arme de combat rapproché**: elle se casse, **retournez le pion** de l'objet,
+  elle nécessite une **réparation**.
+
+.. Note::
+    Les armes sont **réparés automatiquement après une mission** de campagne.
+
+.. Attention::
+    Les échecs ne peuvent pas casser une **aptitude d'équipement**, **aucun effet**
+    n'est appliqué à cet équipement.
