@@ -3,12 +3,12 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="Attaque à distance" href="../attacks/shot.html"><link rel="prev" title="Liens utiles" href="../links.html">
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="Phase des PNJ" href="npc.html"><link rel="prev" title="Phase des marchands" href="traders.html">
         <link rel="prefetch" href="../_static/logo.dark.svg" as="image">
         <link rel="prefetch" href="../_static/logo.white.svg" as="image">
 
     <link rel="shortcut icon" href="../_static/favicon.ico"><!-- Generated with Sphinx 8.1.3 and Furo 2025.12.19 -->
-        <title>Pion de tour - Core Spacev0.2.1</title>
+        <title>Phase de la Purge - Core Spacev0.2.1</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -178,7 +178,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
       </label>
     </div>
@@ -206,14 +206,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../links.html">Liens utiles</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Éléments clés</span></p>
-<ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Pion de tour</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../gameplay/turn-counter.html">Pion de tour</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../attacks/shot.html">Attaque à distance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../attacks/combat.html">Attaque rapprochée</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../attacks/throw.html">Attaque de lancé</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../attacks/explosive.html">Effet explosif</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../attacks/failure.html">Défaillance d’une arme</a></li>
-<li class="toctree-l1"><a class="reference internal" href="npc_ai.html">Schéma d’activation des PNJ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gameplay/npc_ai.html">Schéma d’activation des PNJ</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Matériel de jeu</span></p>
 <ul>
@@ -233,14 +233,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../characters/aptitudes.html">Aptitudes d’un personnage</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Déroulement d'une mission</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="start_mission.html">Démarrer une mission</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../phases/index.html">Ordre des phases d’un tour</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../phases/hostile.html">Phase d’Hostilité</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../phases/traders.html">Phase des marchands</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../phases/purge.html">Phase de la Purge</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../phases/npc.html">Phase des PNJ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="end_mission.html">Fin d’une mission</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../gameplay/start_mission.html">Démarrer une mission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Ordre des phases d’un tour</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hostile.html">Phase d’Hostilité</a></li>
+<li class="toctree-l1"><a class="reference internal" href="traders.html">Phase des marchands</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Phase de la Purge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="npc.html">Phase des PNJ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gameplay/end_mission.html">Fin d’une mission</a></li>
 </ul>
 
 </div>
@@ -261,7 +261,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../_sources/gameplay/turn-counter.rst.txt" title="View this page">
+  <a class="muted-link" href="../_sources/phases/purge.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -274,29 +274,74 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="pion-de-tour">
-<span id="turn-counter-intro"></span><h1>Pion de tour<a class="headerlink" href="#pion-de-tour" title="Link to this heading">¶</a></h1>
+          <section id="phase-de-la-purge">
+<span id="phases-purge-intro"></span><h1>Phase de la Purge<a class="headerlink" href="#phase-de-la-purge" title="Link to this heading">¶</a></h1>
+<p>Cette phase se découpe en deux étapes:</p>
+<ol class="arabic simple">
+<li><p><strong>Arrivée</strong> des personnages de la Purge;</p></li>
+<li><p><strong>Activation</strong> de <strong>tout</strong> les personnages de la Purge <strong>présents</strong> sur le plateau.</p></li>
+</ol>
+<section id="arrivee">
+<h2>Arrivée<a class="headerlink" href="#arrivee" title="Link to this heading">¶</a></h2>
+<p>L’arrivée se résoud en lisant le compteur d’hostilité dont la dernière épingle décrit
+le niveau en cours.</p>
+<p>Chaque niveau d’hostilité indique le type de personnage et son nombre. Le nombre est
+soit directement un chiffre, soit un dé à lancer :</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../dices/purge.html#dices-purge-intro"><span class="std std-ref">Le dé de la Purge</span></a> qui indique un nombre;</p></li>
+<li><p><a class="reference internal" href="../dices/luck.html#dices-luck-intro"><span class="std std-ref">Le dé de chance</span></a> dont la face avec l’icône “à capuche” provoque l’arrivée d’un
+personnage “Organique”. Tout autre face est ignorée.</p></li>
+</ul>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
-<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-4 sd-col-lg-4 docutils">
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-2 sd-col-lg-2 docutils">
 <figure class="align-center">
-<img alt="../_images/turn-counter.png" src="../_images/turn-counter.png" />
+<img alt="../_images/purge-entry-token.png" src="../_images/purge-entry-token.png" />
 </figure>
 </div>
-<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-8 sd-col-lg-8 docutils">
-<p>Le pion de tour indique quel <strong>joueur</strong> est le <strong>premier a commencé un tour</strong>.</p>
-<p>De plus certaines <strong>règles</strong> du jeu lui <strong>donne la main</strong> pour <strong>lancer des
-dés</strong>, <strong>choisir</strong> ou <strong>arbitrer</strong> certains résultats.</p>
-<p>Un joueur ne <strong>conserve pas</strong> ce pion de tour en tour mais <strong>le donne au joueur
-suivant</strong> (dans le sens horaire) à la toute <strong>fin du tour</strong>.</p>
+<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-10 sd-col-lg-10 docutils">
+<p>Chaque personnage <strong>arrive</strong> sur un des <strong>6 points d’entrées</strong> numérotés.
+Lancez <a class="reference internal" href="../dices/luck.html#dices-luck-intro"><span class="std std-ref">Le dé de chance</span></a> (ou 1d6) pour trouver <strong>sur quel point</strong> le
+personnnage arrive.</p>
 </div>
 </div>
 </div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Si il n’y a <strong>plus de figurine</strong> disponible pour le type de personnage désigné pour
+sortir, on prend une <strong>figurine de rang inférieur</strong>.</p>
+<p>Si il ne reste plus de figurines <strong>disponibles</strong>, <strong>aucun</strong> personnage n’entre.</p>
+</div>
+</section>
+<section id="activation">
+<h2>Activation<a class="headerlink" href="#activation" title="Link to this heading">¶</a></h2>
+<p>Les personnages s’activent selon leur <strong>rang du plus grand au plus faible</strong>. Le joueur
+avec le <a class="reference internal" href="../gameplay/turn-counter.html#turn-counter-intro"><span class="std std-ref">Pion de tour</span></a> arbitre l’ordre entre les personnages de même rang.</p>
+<p>Lors de chaque activation d’un personnage, il <strong>détermine sa cible</strong>:</p>
+<ul class="simple">
+<li><p>Un personnage de la Purge n’attaque <strong>jamais</strong> un autre personnage de la Purge;</p></li>
+<li><p><strong>Par défaut</strong> c’est le personnage le plus <strong>proche</strong>, en <strong>ligne de vue</strong> et
+<strong>pas à couvert</strong>;</p></li>
+<li><p>Si tout les personnages en ligne de vue sont <strong>à couverts</strong>, ce sera
+<strong>le plus proche</strong>;</p></li>
+<li><p>Si il n’y a <strong>personne en ligne de vue</strong> ce sera n’importe quel personnage le plus
+<strong>proche sur le plateau</strong>.</p></li>
+</ul>
+<p>Un personnage ne <strong>change de cible</strong> pendant son tour que si sa <strong>cible a été vaincue</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Un <strong>assassin</strong> cible toujours en priorité un capitaine parmi les cibles
+potentielles.</p>
+</div>
+<p>Une fois que le ciblage est déterminé, le personnage peut se déplacer et/ou attaquer
+en utilisant ses <strong>points d’actions</strong>. Ses actions seront déterminés d’après le
+<a class="reference internal" href="../gameplay/npc_ai.html#npc-ai-intro"><span class="std std-ref">Schéma d’activation des PNJ</span></a>.</p>
+</section>
 </section>
 
         </article>
@@ -304,23 +349,23 @@ suivant</strong> (dans le sens horaire) à la toute <strong>fin du tour</strong>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../attacks/shot.html">
+          <a class="next-page" href="npc.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Attaque à distance</div>
+                <div class="title">Phase des PNJ</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../links.html">
+          <a class="prev-page" href="traders.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Liens utiles</div>
+                <div class="title">Phase des marchands</div>
                 
               </div>
             </a>
@@ -342,8 +387,28 @@ suivant</strong> (dans le sens horaire) à la toute <strong>fin du tour</strong>
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Phase de la Purge</a><ul>
+<li><a class="reference internal" href="#arrivee">Arrivée</a></li>
+<li><a class="reference internal" href="#activation">Activation</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

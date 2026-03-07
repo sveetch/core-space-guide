@@ -3,12 +3,12 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="Attaque à distance" href="../attacks/shot.html"><link rel="prev" title="Liens utiles" href="../links.html">
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="Les dés d’attaque" href="../dices/attack.html"><link rel="prev" title="Défaillance d’une arme" href="../attacks/failure.html">
         <link rel="prefetch" href="../_static/logo.dark.svg" as="image">
         <link rel="prefetch" href="../_static/logo.white.svg" as="image">
 
     <link rel="shortcut icon" href="../_static/favicon.ico"><!-- Generated with Sphinx 8.1.3 and Furo 2025.12.19 -->
-        <title>Pion de tour - Core Spacev0.2.1</title>
+        <title>Schéma d’activation des PNJ - Core Spacev0.2.1</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -207,13 +207,13 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Éléments clés</span></p>
 <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Pion de tour</a></li>
+<li class="toctree-l1"><a class="reference internal" href="turn-counter.html">Pion de tour</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../attacks/shot.html">Attaque à distance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../attacks/combat.html">Attaque rapprochée</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../attacks/throw.html">Attaque de lancé</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../attacks/explosive.html">Effet explosif</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../attacks/failure.html">Défaillance d’une arme</a></li>
-<li class="toctree-l1"><a class="reference internal" href="npc_ai.html">Schéma d’activation des PNJ</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Schéma d’activation des PNJ</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Matériel de jeu</span></p>
 <ul>
@@ -261,7 +261,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../_sources/gameplay/turn-counter.rst.txt" title="View this page">
+  <a class="muted-link" href="../_sources/gameplay/npc_ai.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -279,24 +279,13 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="pion-de-tour">
-<span id="turn-counter-intro"></span><h1>Pion de tour<a class="headerlink" href="#pion-de-tour" title="Link to this heading">¶</a></h1>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
-<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-4 sd-col-lg-4 docutils">
+          <section id="schema-d-activation-des-pnj">
+<span id="npc-ai-intro"></span><h1>Schéma d’activation des PNJ<a class="headerlink" href="#schema-d-activation-des-pnj" title="Link to this heading">¶</a></h1>
+<p>Ce schéma est un organigramme de décision. Il sert à déterminer le comportement d’un
+PNJ pour ses attaques.</p>
 <figure class="align-center">
-<img alt="../_images/turn-counter.png" src="../_images/turn-counter.png" />
+<img alt="../_images/npc_ia.svg" src="../_images/npc_ia.svg" />
 </figure>
-</div>
-<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-8 sd-col-lg-8 docutils">
-<p>Le pion de tour indique quel <strong>joueur</strong> est le <strong>premier a commencé un tour</strong>.</p>
-<p>De plus certaines <strong>règles</strong> du jeu lui <strong>donne la main</strong> pour <strong>lancer des
-dés</strong>, <strong>choisir</strong> ou <strong>arbitrer</strong> certains résultats.</p>
-<p>Un joueur ne <strong>conserve pas</strong> ce pion de tour en tour mais <strong>le donne au joueur
-suivant</strong> (dans le sens horaire) à la toute <strong>fin du tour</strong>.</p>
-</div>
-</div>
-</div>
 </section>
 
         </article>
@@ -304,23 +293,23 @@ suivant</strong> (dans le sens horaire) à la toute <strong>fin du tour</strong>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../attacks/shot.html">
+          <a class="next-page" href="../dices/attack.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Attaque à distance</div>
+                <div class="title">Les dés d’attaque</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          <a class="prev-page" href="../links.html">
+          <a class="prev-page" href="../attacks/failure.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Liens utiles</div>
+                <div class="title">Défaillance d’une arme</div>
                 
               </div>
             </a>

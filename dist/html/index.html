@@ -8,7 +8,7 @@
         <link rel="prefetch" href="_static/logo.white.svg" as="image">
 
     <link rel="shortcut icon" href="_static/favicon.ico"><!-- Generated with Sphinx 8.1.3 and Furo 2025.12.19 -->
-        <title>Core Spacev0.1.0</title>
+        <title>Core Spacev0.2.1</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -167,7 +167,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="#"><div class="brand">Core Space<br><small>v0.1.0</small></div></a>
+      <a href="#"><div class="brand">Core Space<br><small>v0.2.1</small></div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -192,7 +192,7 @@
     <img class="sidebar-logo only-dark" src="_static/logo.white.svg" alt="Dark Logo"/>
   </div>
   
-  <span class="sidebar-brand-text">Core Space<br><small>v0.1.0</small></span>
+  <span class="sidebar-brand-text">Core Space<br><small>v0.2.1</small></span>
   
 </a><form class="sidebar-search-container" method="get" action="search.html" role="search">
   <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
@@ -213,19 +213,34 @@
 <li class="toctree-l1"><a class="reference internal" href="attacks/throw.html">Attaque de lancé</a></li>
 <li class="toctree-l1"><a class="reference internal" href="attacks/explosive.html">Effet explosif</a></li>
 <li class="toctree-l1"><a class="reference internal" href="attacks/failure.html">Défaillance d’une arme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gameplay/npc_ai.html">Schéma d’activation des PNJ</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Matériel de jeu</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="dices/attack.html">Les dés d’attaque</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dices/purge.html">Le dé de la Purge</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dices/luck.html">Le dé de chance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuff/weapon_tiles.html">Les jetons d’armes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuff/object_tiles.html">Les jetons d’accessoires</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuff/aptitudes.html">Aptitudes d’équipement</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Statistiques et aptitudes</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="characters/trader_statistic_card.html">Statistiques d’un marchand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="characters/trader_career.html">Les points de carrière</a></li>
 <li class="toctree-l1"><a class="reference internal" href="characters/trader_class_card.html">Classe de compétence d’un marchand</a></li>
 <li class="toctree-l1"><a class="reference internal" href="characters/npc_statistic_card.html">Statistiques d’un PNJ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="characters/aptitudes.html">Aptitudes d’un personnage</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Déroulement d'une mission</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="gameplay/start_mission.html">Démarrer une mission</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phases/index.html">Ordre des phases d’un tour</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phases/hostile.html">Phase d’Hostilité</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phases/traders.html">Phase des marchands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phases/purge.html">Phase de la Purge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phases/npc.html">Phase des PNJ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gameplay/end_mission.html">Fin d’une mission</a></li>
 </ul>
 
 </div>
@@ -268,7 +283,7 @@
 <h1>Core Space<a class="headerlink" href="#core-space" title="Link to this heading">¶</a></h1>
 <dl class="field-list simple">
 <dt class="field-odd">Date<span class="colon">:</span></dt>
-<dd class="field-odd"><p>2026-02-13</p>
+<dd class="field-odd"><p>2026-03-07</p>
 </dd>
 </dl>
 <figure class="align-center">
@@ -307,7 +322,6 @@ apprendre à jouer.</p>
 </section>
 <section id="elements-cles">
 <h2>Éléments clés<a class="headerlink" href="#elements-cles" title="Link to this heading">¶</a></h2>
-<p>Tout les éléments clés du jeu devraient être décrit ici un à un dans une version résumée.</p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Éléments clés</span></p>
 <ul>
@@ -317,19 +331,49 @@ apprendre à jouer.</p>
 <li class="toctree-l1"><a class="reference internal" href="attacks/throw.html">Attaque de lancé</a></li>
 <li class="toctree-l1"><a class="reference internal" href="attacks/explosive.html">Effet explosif</a></li>
 <li class="toctree-l1"><a class="reference internal" href="attacks/failure.html">Défaillance d’une arme</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gameplay/npc_ai.html">Schéma d’activation des PNJ</a></li>
+</ul>
+</div>
+</section>
+<section id="materiel-de-jeu">
+<h2>Matériel de jeu<a class="headerlink" href="#materiel-de-jeu" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Matériel de jeu</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="dices/attack.html">Les dés d’attaque</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dices/purge.html">Le dé de la Purge</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dices/luck.html">Le dé de chance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuff/weapon_tiles.html">Les jetons d’armes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuff/object_tiles.html">Les jetons d’accessoires</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuff/aptitudes.html">Aptitudes d’équipement</a></li>
+</ul>
+</div>
+</section>
+<section id="statistiques-et-aptitudes">
+<h2>Statistiques et aptitudes<a class="headerlink" href="#statistiques-et-aptitudes" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Statistiques et aptitudes</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="characters/trader_statistic_card.html">Statistiques d’un marchand</a></li>
+<li class="toctree-l1"><a class="reference internal" href="characters/trader_career.html">Les points de carrière</a></li>
 <li class="toctree-l1"><a class="reference internal" href="characters/trader_class_card.html">Classe de compétence d’un marchand</a></li>
 <li class="toctree-l1"><a class="reference internal" href="characters/npc_statistic_card.html">Statistiques d’un PNJ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="characters/aptitudes.html">Aptitudes d’un personnage</a></li>
+</ul>
+</div>
+</section>
+<section id="deroulement-d-une-mission">
+<h2>Déroulement d’une mission<a class="headerlink" href="#deroulement-d-une-mission" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Déroulement d'une mission</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="gameplay/start_mission.html">Démarrer une mission</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phases/index.html">Ordre des phases d’un tour</a></li>
 <li class="toctree-l1"><a class="reference internal" href="phases/hostile.html">Phase d’Hostilité</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phases/traders.html">Phase des marchands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phases/purge.html">Phase de la Purge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phases/npc.html">Phase des PNJ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gameplay/end_mission.html">Fin d’une mission</a></li>
 </ul>
 </div>
 </section>
@@ -338,6 +382,7 @@ apprendre à jouer.</p>
 <p>All designs © Battle Systems ™ 2022.  <a class="reference external" href="https://www.BattleSystems.co.uk">https://www.BattleSystems.co.uk</a></p>
 <p>Certains textes peuvent provenir du document <em>Aides de jeu / Cartes / Résumés des règles pour Core Space</em> par la communauté de VortexZone <a class="reference external" href="https://vortexzone.com/">https://vortexzone.com/</a></p>
 <p>Le logo SVG et certaines découpes graphiques proviennent de la formidable application de Nico Van den Winckel <a class="reference external" href="https://github.com/xinix/core-space">https://github.com/xinix/core-space</a></p>
+<p>Certains symboles en SVG ont été fait avec ou à partir d’éléments provenant de <a class="reference external" href="https://www.svgrepo.com">SVG Repo</a>.</p>
 </section>
 </section>
 
@@ -389,6 +434,9 @@ apprendre à jouer.</p>
 <li><a class="reference internal" href="#">Core Space</a><ul>
 <li><a class="reference internal" href="#introduction">Introduction</a></li>
 <li><a class="reference internal" href="#elements-cles">Éléments clés</a></li>
+<li><a class="reference internal" href="#materiel-de-jeu">Matériel de jeu</a></li>
+<li><a class="reference internal" href="#statistiques-et-aptitudes">Statistiques et aptitudes</a></li>
+<li><a class="reference internal" href="#deroulement-d-une-mission">Déroulement d’une mission</a></li>
 <li><a class="reference internal" href="#credits">Crédits</a></li>
 </ul>
 </li>
@@ -401,7 +449,7 @@ apprendre à jouer.</p>
       
     </aside>
   </div>
-</div><script src="_static/documentation_options.js?v=01f34227"></script>
+</div><script src="_static/documentation_options.js?v=37f418d5"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/scripts/furo.js?v=46bd48cc"></script>

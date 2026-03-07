@@ -3,12 +3,12 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="next" title="Attaque à distance" href="../attacks/shot.html"><link rel="prev" title="Liens utiles" href="../links.html">
+<link rel="index" title="Index" href="../genindex.html"><link rel="search" title="Search" href="../search.html"><link rel="prev" title="Phase des PNJ" href="../phases/npc.html">
         <link rel="prefetch" href="../_static/logo.dark.svg" as="image">
         <link rel="prefetch" href="../_static/logo.white.svg" as="image">
 
     <link rel="shortcut icon" href="../_static/favicon.ico"><!-- Generated with Sphinx 8.1.3 and Furo 2025.12.19 -->
-        <title>Pion de tour - Core Spacev0.2.1</title>
+        <title>Fin d’une mission - Core Spacev0.2.1</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -206,8 +206,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../links.html">Liens utiles</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Éléments clés</span></p>
-<ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Pion de tour</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="turn-counter.html">Pion de tour</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../attacks/shot.html">Attaque à distance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../attacks/combat.html">Attaque rapprochée</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../attacks/throw.html">Attaque de lancé</a></li>
@@ -233,14 +233,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../characters/aptitudes.html">Aptitudes d’un personnage</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Déroulement d'une mission</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="start_mission.html">Démarrer une mission</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../phases/index.html">Ordre des phases d’un tour</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../phases/hostile.html">Phase d’Hostilité</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../phases/traders.html">Phase des marchands</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../phases/purge.html">Phase de la Purge</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../phases/npc.html">Phase des PNJ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="end_mission.html">Fin d’une mission</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Fin d’une mission</a></li>
 </ul>
 
 </div>
@@ -261,7 +261,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="../_sources/gameplay/turn-counter.rst.txt" title="View this page">
+  <a class="muted-link" href="../_sources/gameplay/end_mission.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -279,23 +279,23 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="pion-de-tour">
-<span id="turn-counter-intro"></span><h1>Pion de tour<a class="headerlink" href="#pion-de-tour" title="Link to this heading">¶</a></h1>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
-<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-4 sd-col-lg-4 docutils">
-<figure class="align-center">
-<img alt="../_images/turn-counter.png" src="../_images/turn-counter.png" />
-</figure>
-</div>
-<div class="sd-col sd-d-flex-column sd-col-12 sd-col-xs-12 sd-col-sm-12 sd-col-md-8 sd-col-lg-8 docutils">
-<p>Le pion de tour indique quel <strong>joueur</strong> est le <strong>premier a commencé un tour</strong>.</p>
-<p>De plus certaines <strong>règles</strong> du jeu lui <strong>donne la main</strong> pour <strong>lancer des
-dés</strong>, <strong>choisir</strong> ou <strong>arbitrer</strong> certains résultats.</p>
-<p>Un joueur ne <strong>conserve pas</strong> ce pion de tour en tour mais <strong>le donne au joueur
-suivant</strong> (dans le sens horaire) à la toute <strong>fin du tour</strong>.</p>
-</div>
-</div>
+          <section id="fin-d-une-mission">
+<span id="end-mission-intro"></span><h1>Fin d’une mission<a class="headerlink" href="#fin-d-une-mission" title="Link to this heading">¶</a></h1>
+<p>La fin d’une mission se réalise lorsque <strong>tout</strong> les marchands ont <strong>quitté le plateau</strong>
+ou <strong>sont à terre</strong>.</p>
+<p>Chaque marchand <strong>revenu dans son vaisseau</strong> gagne automatiquement <strong>1 point de
+carrière</strong> supplémentaire.</p>
+<p>Si un joueur a remporté l’objectif de principal de mission il est considéré comme <strong>le
+vainqueur</strong>. En plus du possible gain de l’objectif, le vainqueur sera <strong>le premier</strong> a
+décidé de son <strong>SAS d’entrée</strong> à la <strong>prochaine partie</strong> sans s’en remettre au hasard
+des dés.</p>
+<p>Si un joueur a tué un personnage de <a class="reference internal" href="../overview.html#purge-intro"><span class="std std-ref">La purge</span></a> de type <strong>Organique</strong>, il gagne
+un <strong>jeton spécial</strong> qu’il pourra échanger contre un point de carrière supplémentaire.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Une mission peut être rejouée, pour celà réferrez vous au manuel qui décrit les
+possibilités de changements d’une mission pour la rejouer.</p>
+<p>Les gains d’une mission rejouée peuvent être comptabilisés dans la même campagne.</p>
 </div>
 </section>
 
@@ -304,23 +304,15 @@ suivant</strong> (dans le sens horaire) à la toute <strong>fin du tour</strong>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="../attacks/shot.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title">Attaque à distance</div>
-              </div>
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-            </a>
-          <a class="prev-page" href="../links.html">
+          
+          <a class="prev-page" href="../phases/npc.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Liens utiles</div>
+                <div class="title">Phase des PNJ</div>
                 
               </div>
             </a>

@@ -8,17 +8,18 @@ Pion de tour
     :gutter: 2
 
     .. grid-item::
-        :columns: 12 12 5 5
+        :columns: 12 12 4 4
 
         .. figure:: /_static/images/turn-counter.png
-            :align: left
+            :align: center
 
     .. grid-item::
-        :columns: 12 12 7 7
+        :columns: 12 12 8 8
 
-        Le pion de tour indique quel **joueur** est le **premier a commencé un tour**
-        et aussi plusieurs **règles** du jeu lui **donne la main** pour **lancer des
-        dés** ou **arbitrer** certains résultats.
+        Le pion de tour indique quel **joueur** est le **premier a commencé un tour**.
+
+        De plus certaines **règles** du jeu lui **donne la main** pour **lancer des
+        dés**, **choisir** ou **arbitrer** certains résultats.
 
         Un joueur ne **conserve pas** ce pion de tour en tour mais **le donne au joueur
         suivant** (dans le sens horaire) à la toute **fin du tour**.

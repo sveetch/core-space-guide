@@ -81,8 +81,7 @@ Statistiques d'un marchand
     .. grid-item::
         :columns: 12 12 7 7
 
-        **Les points de carrière** (*Career*) indique les points que l'on peut allouer à
-        la maîtrise des compétences de sa classe.
+        **La carrière** (*Career*) indique :ref:`trader_career_intro`.
 
     .. grid-item::
         :columns: 12 12 5 5
@@ -106,5 +105,5 @@ Statistiques d'un marchand
         :columns: 12 12 7 7
 
         Le grand carré en bas à droite est un emplacement d'armure. Il peut parfois
-        contenir une compétence qui n'est disponible que si l'emplacement ne contient
-        pas de tuile d'équipement.
+        contenir une compétence qui n'est utilisable que si l'emplacement ne contient
+        pas de jeton d'équipement.
